@@ -25,13 +25,18 @@ public class Server implements Runnable {
         namedClientAdded(name);
     }
 
-    public synchronized void sendMessage(String to, String message) {
-        for (ClientDispatcher clientDispatcher : clientDispatcherList) {
-            try {
-                clientDispatcher.sendMessage(to, message);
-            } catch (IOException ignored) {
+    public synchronized void sendMessage(String from, String to, String message) throws IOException {
+        if (from == null)
+            from = "unknown";
+        if (to.equals("ALL"))
+            for (ClientDispatcher clientDispatcher : clientDispatcherList) {
+                try {
+                    clientDispatcher.sendMessage(from, to, message);
+                } catch (IOException ignored) {
+                }
             }
-        }
+        else if (nameToClientDispatcherHashMap.get(to) != null)
+            nameToClientDispatcherHashMap.get(to).sendMessage(from, to, message);
     }
 
     public synchronized void forgetClient(ClientDispatcher clientDispatcher, String name) {
