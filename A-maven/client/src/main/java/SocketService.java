@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,15 +11,14 @@ import java.net.Socket;
  * Date: 28.02.13
  * Time: 20:50
  */
-public class SocketService implements Runnable {
+class SocketService implements Runnable {
+    private final String name;
+    private final DefaultListModel<String> usersListModel = new DefaultListModel<>();
     private Socket socket;
-    private String name;
-    private BufferedReader bufferedReader;
     private OutputStreamWriter outputStreamWriter;
-    private DefaultListModel<String> usersListModel = new DefaultListModel<String>();
     private UserInterface ui;
 
-    public SocketService(String name) throws IOException {
+    public SocketService(String name) {
         this.name = name;
     }
 
@@ -32,7 +32,7 @@ public class SocketService implements Runnable {
     }
 
     private synchronized void addPeerName(String name) {
-        if (usersListModel.contains(name) == false)
+        if (!usersListModel.contains(name))
             usersListModel.addElement(name);
     }
 
@@ -66,7 +66,7 @@ public class SocketService implements Runnable {
     public void run() {
         try {
             socket = new Socket((String) null, 9000);
-            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             outputStreamWriter = new OutputStreamWriter(socket.getOutputStream());
             sendToSocket("NAME" + name);
             sendToSocket("GET CLIENTS");

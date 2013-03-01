@@ -10,7 +10,7 @@ import java.util.Set;
  * Date: 27.02.13
  * Time: 19:14
  */
-public class ClientDispatcher implements Runnable {
+class ClientDispatcher implements Runnable {
     private final Server server;
     private String name;
     private BufferedReader inputStreamReader;
@@ -52,7 +52,7 @@ public class ClientDispatcher implements Runnable {
     }
 
     public void sendMessage(String from, String to, String message) throws IOException {
-        if (name != null && from.equals(name) == false) {
+        if (name != null && !from.equals(name)) {
             if (name.equals(to) || to.equals("ALL")) {
                 sendToSocket("MESSAGE#" + from + "#" + message);
             }

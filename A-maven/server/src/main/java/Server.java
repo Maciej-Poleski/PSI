@@ -7,10 +7,10 @@ import java.util.*;
  * Date: 27.02.13
  * Time: 19:14
  */
-public class Server implements Runnable {
+class Server implements Runnable {
     private final ServerSocket server;
-    private List<ClientDispatcher> clientDispatcherList = new ArrayList<ClientDispatcher>();
-    private Map<String, ClientDispatcher> nameToClientDispatcherHashMap = new HashMap<String, ClientDispatcher>();
+    private final List<ClientDispatcher> clientDispatcherList = new ArrayList<>();
+    private final Map<String, ClientDispatcher> nameToClientDispatcherHashMap = new HashMap<>();
 
     public Server(int port) throws IOException {
         server = new ServerSocket(port);

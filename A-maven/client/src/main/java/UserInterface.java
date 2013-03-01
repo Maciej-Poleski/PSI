@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,7 +17,7 @@ public class UserInterface {
     private JButton exitButton;
     private JList<String> usersList;
     private JTextArea chatPane;
-    private JTextArea newMessageField;
+    private JTextField newMessageField;
     private JPanel mainPanel;
 
     public UserInterface() {
@@ -58,7 +59,7 @@ public class UserInterface {
                 UserInterface ui = new UserInterface();
                 service.setUi(ui);
                 frame.setContentPane(ui.mainPanel);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
             }

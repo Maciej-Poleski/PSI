@@ -44,33 +44,60 @@
             </properties>
             <border type="none"/>
             <children>
-              <component id="dc97f" class="javax.swing.JTextArea" binding="chatPane">
+              <scrollpane id="373bd">
                 <constraints>
                   <splitpane position="left"/>
                 </constraints>
                 <properties>
-                  <editable value="false"/>
-                  <minimumSize width="200" height="300"/>
+                  <minimumSize width="300" height="500"/>
                 </properties>
-              </component>
-              <component id="f26b4" class="javax.swing.JTextArea" binding="newMessageField">
+                <border type="none"/>
+                <children>
+                  <component id="dc97f" class="javax.swing.JTextArea" binding="chatPane">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <minimumSize width="200" height="300"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="effad">
                 <constraints>
                   <splitpane position="right"/>
                 </constraints>
                 <properties>
-                  <minimumSize width="200" height="100"/>
+                  <minimumSize width="200" height="50"/>
                 </properties>
-              </component>
+                <border type="none"/>
+                <children>
+                  <component id="dbece" class="javax.swing.JTextField" binding="newMessageField">
+                    <constraints/>
+                    <properties>
+                      <minimumSize width="200" height="150"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
             </children>
           </splitpane>
-          <component id="c0384" class="javax.swing.JList" binding="usersList" custom-create="true">
+          <scrollpane id="cedff">
             <constraints>
               <splitpane position="right"/>
             </constraints>
             <properties>
-              <minimumSize width="130" height="500"/>
+              <minimumSize width="100" height="200"/>
             </properties>
-          </component>
+            <border type="none"/>
+            <children>
+              <component id="c0384" class="javax.swing.JList" binding="usersList" custom-create="true">
+                <constraints/>
+                <properties>
+                  <minimumSize width="130" height="500"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
         </children>
       </splitpane>
     </children>
