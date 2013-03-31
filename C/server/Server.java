@@ -7,15 +7,12 @@ import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 //Musimy rozszerzac UnicastRemoteObject
 public class Server extends UnicastRemoteObject implements IServer {
 
-    Map<String, IClient> clientsByNames = new HashMap<String, IClient>();
+    Map<String, IClient> clientsByNames = new HashMap<>();
 
     //Inplementacja konstruktora by rzucal
     //odpowiedni wyjatek
@@ -48,13 +45,66 @@ public class Server extends UnicastRemoteObject implements IServer {
     @Override
     public synchronized void registerClient(IClient client) throws RemoteException {
         String name = client.getName();
+        newClientRegistered(name);
         clientsByNames.put(name, client);
-        client.receiveClientsList((String[]) clientsByNames.keySet().toArray());
+        String[] clients = new String[clientsByNames.size()];
+        Set<String> clientsFromMap = clientsByNames.keySet();
+        int i = 0;
+        for (String s : clientsFromMap) {
+            clients[i++] = s;
+        }
+        client.receiveClientsList(clients);
+    }
+
+    @Override
+    public void unregisterClient(IClient client) throws RemoteException {
+        try {
+            String name = client.getName();
+            clientsByNames.remove(name);
+            oldClientUnregistered(name);
+        } catch (Exception ignored) {
+            // Być może nie uda się uzyskać nazwy - w takim razie zostanie usunięty leniwie
+        }
+    }
+
+    public void unregisterClient(String name) {
+        clientsByNames.remove(name);
+        oldClientUnregistered(name);
+        // to zawsze się uda
+    }
+
+    private void oldClientUnregistered(String name) {
+        for (String client : clientsByNames.keySet()) {
+            try {
+                clientsByNames.get(client).forgetOldClient(name);
+            } catch (RemoteException e) {
+                unregisterClient(client);
+            }
+        }
+    }
+
+    private void newClientRegistered(String name) {
+        for (String client : clientsByNames.keySet())
+            try {
+                clientsByNames.get(client).receiveNewClient(name);
+            } catch (Exception e) {
+                unregisterClient(client);
+            }
+
     }
 
     @Override
     public synchronized void sendMessage(String from, String to, String message) throws RemoteException {
-        clientsByNames.get(to).receiveMessage(from, message);
+        if (clientsByNames.get(to) == null) {
+            sendMessage("SERVER", from, "Nie ma klienta o nicku " + to);
+            return;
+        }
+        try {
+            clientsByNames.get(to).receiveMessage(from, message);
+        } catch (Exception e) {
+            unregisterClient(to);
+            sendMessage("SERVER", from, "Nie ma klienta o nicku " + to);
+        }
     }
 
     @Override

@@ -4,6 +4,7 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Client extends UnicastRemoteObject implements IClient {
@@ -23,60 +24,62 @@ public class Client extends UnicastRemoteObject implements IClient {
             IServer server = (IServer) Naming.lookup(nazwaSerwera);
             Client client = new Client(args[1]);
             server.registerClient(client);
-            BufferedReader input=new BufferedReader(new InputStreamReader(System.in));
-            for(;;)
-            {
+            BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("Jest połączenie\n");
+            for (; ; ) {
                 String line;
-                line=input.readLine();
-                if(line.startsWith("send "))
-                {
-                    line=line.substring("send ".length());
-                    int sp=line.indexOf(" ");
-                    String nick=line.substring(0,sp);
-                    String message=line.substring(sp+1);
-                    server.sendMessage(client.getName(),nick,message);
+                line = input.readLine();
+                if (line.startsWith("send ")) {
+                    line = line.substring("send ".length());
+                    int sp = line.indexOf(" ");
+                    String nick = line.substring(0, sp);
+                    String message = line.substring(sp + 1);
+                    server.sendMessage(client.getName(), nick, message);
                 }
-                if(line.startsWith("list"))
-                {
-                    for(String c:client.clients)
-                    {
+                if (line.startsWith("list")) {
+                    for (String c : client.clients) {
                         System.out.println(c);
                     }
                 }
-                if(line.startsWith("sendall "))
-                {
-                    line=line.substring("sendall ".length());
-                    server.sendToAll(client.getName(),line);
+                if (line.startsWith("sendall ")) {
+                    line = line.substring("sendall ".length());
+                    server.sendToAll(client.getName(), line);
+                }
+                if (line.startsWith("quit")) {
+                    break;
                 }
             }
+            server.unregisterClient(client);
         } catch (Exception e) {
-            System.err.println("Obliczenia sie nie powiodly: " + e.toString() + e.getMessage());
+            System.err.println("Wystąpił wyjątek:\n" + e.toString() + "\n" + e.getMessage() + "\n\n");
+            e.printStackTrace();
         }
         System.out.println("Koniec programu :)");
     }
 
     @Override
     public String getName() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return nick;
     }
 
     @Override
     public void receiveMessage(String from, String message) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        System.out.println("Wiadomość od " + from + ":\n" + message + "\n");
     }
 
     @Override
     public void receiveClientsList(String[] clients) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        this.clients.clear();
+        Collections.addAll(this.clients, clients);
     }
 
     @Override
     public void receiveNewClient(String name) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        this.clients.add(name);
     }
 
     @Override
     public void forgetOldClient(String name) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        this.clients.remove(name);
     }
 }

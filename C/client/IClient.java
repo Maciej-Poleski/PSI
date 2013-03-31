@@ -5,6 +5,7 @@ public interface IClient extends Remote {
 
     /**
      * Klient nie może zmienić swojej nazwy. Liczy się pierwsza wersja.
+     *
      * @return Pseudonim klienta
      */
     String getName() throws RemoteException;

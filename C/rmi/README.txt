@@ -1,0 +1,1 @@
+To jest dobre miejsce do uruchomienia rmiregistry
