@@ -11,8 +11,28 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <description>Obsługa sklepu jako takiego</description>
+        <display-name>ShopServlet</display-name>
+        <servlet-name>ShopServlet</servlet-name>
+        <servlet-class>ShopServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>Servlet odpowiedzialny za dokonanie tranzakcji</description>
+        <display-name>TransactionServlet</display-name>
+        <servlet-name>TransactionServlet</servlet-name>
+        <servlet-class>TransactionServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/login</url-pattern>
+        <url-pattern>/loginImpl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShopServlet</servlet-name>
+        <url-pattern>/shop</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TransactionServlet</servlet-name>
+        <url-pattern>/transaction</url-pattern>
     </servlet-mapping>
 </web-app>

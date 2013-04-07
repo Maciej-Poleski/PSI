@@ -5,6 +5,11 @@
     <title></title>
   </head>
   <body>
-           <h1>Hello World!</h1>
+  <h2>Strona główna</h2>
+           <ul>
+               <li><a href="/loginImpl">Logowanie</a></li>
+               <li><a href="/shop">Oferta</a></li>
+               <li><a href="/transaction">Tranzakcja</a></li>
+           </ul>
   </body>
 </html>
