@@ -7,6 +7,8 @@
     <title></title>
   </head>
   <body>
+  <jsp:include page="menu.jsp"/>
+  <hr/>
        <c:choose>
            <c:when test="false"></c:when>
            <c:otherwise>khtgtf</c:otherwise>
