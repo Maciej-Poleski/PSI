@@ -9,6 +9,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="library" level="project" name="derby-10.9.1.0" />
+          <element id="library" level="project" name="org.apache.derby:derbyclient:10.9.1.01" />
         </element>
       </element>
     </root>

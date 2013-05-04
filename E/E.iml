@@ -21,6 +21,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0" level="application_server_libraries" />
     <orderEntry type="library" name="jstl:jstl:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="derby-10.9.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="org.apache.derby:derbyclient:10.9.1.01" level="project" />
   </component>
 </module>
 

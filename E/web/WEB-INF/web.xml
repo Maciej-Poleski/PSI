@@ -8,9 +8,65 @@
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>RegisterServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>init</servlet-name>
+        <servlet-class>InitializationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OfferServlet</servlet-name>
+        <servlet-class>OfferServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CardServlet</servlet-name>
+        <servlet-class>CardServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BuyServlet</servlet-name>
+        <servlet-class>BuyServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DoBuyServlet</servlet-name>
+        <servlet-class>DoBuyServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/registerImpl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>init</servlet-name>
+        <url-pattern>/init</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginImpl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OfferServlet</servlet-name>
+        <url-pattern>/offerImpl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logoutImpl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CardServlet</servlet-name>
+        <url-pattern>/cardImpl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BuyServlet</servlet-name>
+        <url-pattern>/buyImpl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DoBuyServlet</servlet-name>
+        <url-pattern>/doBuy</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -5,8 +5,8 @@
     <ignored path="E.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/web.xml" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366300355755" ignored="false" />
-    <file path="/index.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366901391144" ignored="false" />
-    <file path="/menu.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366901848080" ignored="false" />
+    <file path="/index.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367611745703" ignored="false" />
+    <file path="/menu.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367669850567" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-2_0.xsd" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366900839202" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xinclude.xsd" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366900839203" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-strict.xsd" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366900839212" ignored="false" />
@@ -220,6 +220,25 @@
     <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspdirectives2_1.xsd" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366901041957" ignored="false" />
     <file path="/register.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366902509107" ignored="false" />
     <file path="/a.txt" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1366903030309" ignored="false" />
+    <file path="/DatabaseUtils.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367672585333" ignored="false" />
+    <file path="/InitializationServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367600411471" ignored="false" />
+    <file path="/RegisterServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367605326481" ignored="false" />
+    <file path="/registered.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367607079991" ignored="false" />
+    <file path="/login.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367608365683" ignored="false" />
+    <file path="/LoginServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367610741974" ignored="false" />
+    <file path="/logged.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367609233630" ignored="false" />
+    <file path="/OfferServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367668594893" ignored="false" />
+    <file path="/offer.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367668678046" ignored="false" />
+    <file path="/logout.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367663694332" ignored="false" />
+    <file path="/fragment.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367670265330" ignored="false" />
+    <file path="/LogoutServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367663727223" ignored="false" />
+    <file path="/Card.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367669072185" ignored="false" />
+    <file path="/card.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367669612107" ignored="false" />
+    <file path="/CardServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367669560963" ignored="false" />
+    <file path="/buy.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367670593803" ignored="false" />
+    <file path="/BuyServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367670139490" ignored="false" />
+    <file path="/DoBuyServlet.java" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367671410953" ignored="false" />
+    <file path="/buy_result.jsp" changelist="cf4614e6-ecee-42c8-9b30-c96b42ad9600" time="1367670535829" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +251,11 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
@@ -280,24 +304,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="235" selection-end="273" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
             <state line="4" column="48" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
           </provider>
           <provider selected="true" editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
@@ -310,26 +325,53 @@
       <file leaf-file-name="menu.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="42" selection-start="501" selection-end="501" vertical-scroll-proportion="-5.0">
+            <state line="9" column="56" selection-start="611" selection-end="611" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <file leaf-file-name="DoBuyServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DoBuyServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="187" selection-end="187" vertical-scroll-proportion="-5.0">
+            <state line="37" column="70" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterServlet.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/RegisterServlet.java">
+      <file leaf-file-name="buy_result.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/buy_result.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.05597015">
-              <folding />
+            <state line="29" column="40" selection-start="646" selection-end="646" vertical-scroll-proportion="-18.961538">
+              <folding>
+                <marker date="1367670536027" expanded="true" signature="216:303" placeholder="{...}" />
+                <marker date="1367670536027" expanded="true" signature="317:365" placeholder="{...}" />
+                <marker date="1367670536027" expanded="true" signature="379:431" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseUtils.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DatabaseUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="47" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.46494994">
+              <folding>
+                <marker date="1367672590012" expanded="true" signature="741:825" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="1172:1255" placeholder="SELECT * fro..users..." />
+                <marker date="1367672590012" expanded="true" signature="1562:1585" placeholder="SELECT * FRO..items..." />
+                <marker date="1367672590012" expanded="true" signature="2141:2279" placeholder="CREATE TABLE..users..." />
+                <marker date="1367672590012" expanded="true" signature="2320:2390" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="2431:2501" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="2536:2671" placeholder="CREATE TABLE..items..." />
+                <marker date="1367672590012" expanded="true" signature="2712:2778" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="2819:2886" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="2927:2996" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="3037:3106" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="3147:3214" placeholder="INSERT INTO ..." />
+                <marker date="1367672590012" expanded="true" signature="4232:4318" placeholder="update app.i..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -344,11 +386,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/InitializationServlet.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/logout.jsp" />
+        <option value="$PROJECT_DIR$/src/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/OfferServlet.java" />
+        <option value="$PROJECT_DIR$/web/offer.jsp" />
+        <option value="$PROJECT_DIR$/src/Card.java" />
+        <option value="$PROJECT_DIR$/src/CardServlet.java" />
+        <option value="$PROJECT_DIR$/web/card.jsp" />
         <option value="$PROJECT_DIR$/web/menu.jsp" />
-        <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/src/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/src/BuyServlet.java" />
+        <option value="$PROJECT_DIR$/web/buy_result.jsp" />
+        <option value="$PROJECT_DIR$/web/buy.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/DoBuyServlet.java" />
+        <option value="$PROJECT_DIR$/src/DatabaseUtils.java" />
       </list>
     </option>
   </component>
@@ -360,10 +413,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="-3" />
-    <option name="width" value="1028" />
-    <option name="height" value="580" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -447,6 +500,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="E" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -454,20 +535,38 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Console.TableResult.DefaultCopyAction" value="SQL Insert Statements" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="Database.TableEditor.PageSize" value="50" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="JdbcConsole.Extract.OpeningQuote" value="'" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/derby-10.9.1.0.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="JdbcConsole.Extract.ClosingQuote" value="'" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="JdbcConsole.Extract.IncludeHeader" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="Repository.Attach.Sources" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="JdbcConsole.Extract.IncludeRowNumbers" value="false" />
     <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\local_user\Projekty\Studia\PSI\E\web" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -482,19 +581,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -525,6 +611,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -542,7 +641,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -579,7 +678,14 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="web:war exploded">
@@ -673,13 +779,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-3" width="1028" height="580" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27321237" sideWeight="0.7135827" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -689,14 +795,15 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24948876" sideWeight="0.30324075" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24881391" sideWeight="0.30413386" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24948876" sideWeight="0.4074074" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28703704" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.7135827" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28641734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.32977587" sideWeight="0.7135827" order="4" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="976" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -769,121 +876,107 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="18" column="64" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/offer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+        <state line="49" column="67" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.7707469">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="28" column="27" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OfferServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="4" selection-start="1120" selection-end="1194" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/menu.jsp">
+    <entry file="file://$PROJECT_DIR$/src/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+        <state line="20" column="3" selection-start="823" selection-end="949" vertical-scroll-proportion="0.36480686">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="501" selection-end="501" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="235" selection-end="273" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="javaeeDummy://JavaeeElement:/34c71ead/registerImpl/E/web/Web/Servlet">
+    <entry file="javaeeDummy://JavaeeElement:/5aa72ceb/BuyServlet/E/web/Web/Servlet">
       <provider selected="true" editor-type-id="com.intellij.javaee.module.view.web.viewlets.ServletEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="javaeeDummy://JavaeeElement:/34c71ead/RegisterServlet/E/web/Web/Servlet">
+    <entry file="file://$PROJECT_DIR$/web/card.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="21" selection-start="518" selection-end="518" vertical-scroll-proportion="-12.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CardServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="117" selection-start="770" selection-end="770" vertical-scroll-proportion="0.10014306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="56" selection-start="611" selection-end="611" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BuyServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="43" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/buy_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="40" selection-start="646" selection-end="646" vertical-scroll-proportion="-18.961538">
+          <folding>
+            <marker date="1367670536027" expanded="true" signature="216:303" placeholder="{...}" />
+            <marker date="1367670536027" expanded="true" signature="317:365" placeholder="{...}" />
+            <marker date="1367670536027" expanded="true" signature="379:431" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/buy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="29" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.94947994">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="javaeeDummy://JavaeeElement:/5aa72ceb/DoBuyServlet/E/web/Web/Servlet">
       <provider selected="true" editor-type-id="com.intellij.javaee.module.view.web.viewlets.ServletEditorProvider">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="4" column="48" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
       </provider>
       <provider selected="true" editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
@@ -892,17 +985,31 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+    <entry file="file://$PROJECT_DIR$/src/DoBuyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="187" selection-end="187" vertical-scroll-proportion="-5.0">
+        <state line="37" column="70" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RegisterServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/DatabaseUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.05597015">
-          <folding />
+        <state line="54" column="47" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.46494994">
+          <folding>
+            <marker date="1367672590012" expanded="true" signature="741:825" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="1172:1255" placeholder="SELECT * fro..users..." />
+            <marker date="1367672590012" expanded="true" signature="1562:1585" placeholder="SELECT * FRO..items..." />
+            <marker date="1367672590012" expanded="true" signature="2141:2279" placeholder="CREATE TABLE..users..." />
+            <marker date="1367672590012" expanded="true" signature="2320:2390" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="2431:2501" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="2536:2671" placeholder="CREATE TABLE..items..." />
+            <marker date="1367672590012" expanded="true" signature="2712:2778" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="2819:2886" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="2927:2996" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="3037:3106" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="3147:3214" placeholder="INSERT INTO ..." />
+            <marker date="1367672590012" expanded="true" signature="4232:4318" placeholder="update app.i..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -966,7 +1073,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -986,7 +1092,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jstl:jstl:1.2</last-edited>
+          <last-edited>org.apache.derby:derbyclient:10.9.1.01</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
