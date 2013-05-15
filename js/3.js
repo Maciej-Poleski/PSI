@@ -1,0 +1,3 @@
+addEventListener
+document.querySelector
+document.getElementById
