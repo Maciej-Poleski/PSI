@@ -1,46 +1,35 @@
 var createEmitter = function(){
     var result= {
-        mapping : {},        
-        emit : function(name)
-        {
-            if(name in this.mapping)
-            for(var i=0;i<this.mapping.name.length;++i)
-            {
-                if(this.mapping.name[i]!==undefined)
-                this.mapping.name[i]();
-            }
-        },
-        
+        mapping : [],
         on : function(name,callback)
         {
-            if(this.mapping.name===undefined)
-            {
-                this.mapping.name=[callback];
-            }
-            else
-            {
-                this.mapping.name.push(callback);
-            }
+            this.mapping.push({name : name,callback : callback,once : false});
         },
         once : function(name,callback)
-        {},
-        off:function(name)
         {
-            if(arguments>1)
+            this.mapping.push({name : name,callback : callback,once : true});
+        },
+        off : function(name,callback)
+        {
+            if(arguments.length==1)
             {
-                var callback=arguments[0];
-                if(name in this.mapping)
-                for(var i=0;i<this.mapping.name.length;++i)
-                {
-                    if(this.mapping.name[i]===callback)
-                        delete this.mapping.name[i];
-                }
+                this.mapping=this.mapping.filter(function(e){return e.name!==name;});
             }
             else
             {
-                if(name in this.mapping)
-                    delete this.mapping.name;
+                this.mapping=this.mapping.filter(function(e){return e.name!==name || e.callback!=callback;});
             }
+        },
+        emit : function(name)
+        {
+            for(var i=0;i<this.mapping.length;++i)
+            {
+                if(this.mapping[i].name===name)
+                {
+                    this.mapping[i].callback();
+                }
+            }
+            this.mapping=this.mapping.filter(function(e){return e.name!=name || !e.once;});
         }
     };
     return result;
