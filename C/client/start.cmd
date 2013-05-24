@@ -1,0 +1,1 @@
+java -Djava.rmi.server.codebase=http://maciej.poleski.student.tcs.uj.edu.pl/client/ Client localhost nick

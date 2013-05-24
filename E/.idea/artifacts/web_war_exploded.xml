@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="E/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="E" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="library" level="project" name="derby-10.9.1.0" />
+          <element id="library" level="project" name="org.apache.derby:derbyclient:10.9.1.01" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

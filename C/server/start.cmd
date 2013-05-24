@@ -1,0 +1,1 @@
+java -Djava.security.policy=java.policy -Djava.rmi.server.codebase=http://maciej.poleski.student.tcs.uj.edu.pl/server/ Server
