@@ -1,0 +1,233 @@
+homework2/event-emitter
+---
+var createEmitter = function(){
+    var result= {
+        mapping : [],
+        on : function(name,callback)
+        {
+            this.mapping.push({name : name,callback : callback,once : false});
+        },
+        once : function(name,callback)
+        {
+            this.mapping.push({name : name,callback : callback,once : true});
+        },
+        off : function(name,callback)
+        {
+            if(arguments.length==1)
+            {
+                this.mapping=this.mapping.filter(function(e){return e.name!==name;});
+            }
+            else
+            {
+                this.mapping=this.mapping.filter(function(e){return e.name!==name || e.callback!=callback;});
+            }
+        },
+        emit : function(name)
+        {
+            for(var i=0;i<this.mapping.length;++i)
+            {
+                if(this.mapping[i].name===name)
+                {
+                    this.mapping[i].callback();
+                }
+            }
+            this.mapping=this.mapping.filter(function(e){return e.name!=name || !e.once;});
+        }
+    };
+    return result;
+};
+==========
+
+homework2/async
+---
+function makeChain(funArray,callback)
+{
+    if(funArray.length===0)
+        return callback;
+    return function(){
+        var fun=funArray.pop();
+        fun(makeChain(funArray,callback));
+    };
+}
+
+var done = function(fun, callback){
+    makeChain(fun,callback)();
+};
+==========
+
+homework2/my-jquery
+---
+var my$ = function(name){
+    var setOfElements = [];
+    
+    setOfElements=document.querySelectorAll(name);
+    
+    return {
+        elements : setOfElements,
+        on : function(event,callback){
+            for(var i=0;i<this.elements.length;++i)
+            {
+                this.elements[i].addEventListener(event,callback);
+            }
+            return this;
+        }
+    };
+};
+==========
+
+homework2/clock
+---
+function clock(server)
+{
+    var d=new Date();
+    var ref=function()
+    {
+        var month = d.getMonth()+1;
+        var day = d.getDate();
+        var t=d.getFullYear() + '-' + (month<10 ? '0' : '') + month + '-' + (day<10 ? '0' : '') + day;
+        $('div#clock').text(t);
+    };
+    server.on('update', function(date){
+        d=date;
+        ref();
+    });
+    return ref;
+}
+==========
+
+homework/factorial
+---
+var f = function(n){
+    if(typeof(n)!=typeof(5))
+    return -1;
+    if(n<0)
+        return -1 * f(-n);
+    if(n<2)
+        return 1;
+        var result=1;
+    for(var i=2;i<=n;++i)
+    result*=i;
+    return result;
+}
+==========
+
+homework/function-composition
+---
+var compose = function(f, g){
+    return function(x)
+    {
+        return f(g(x));
+    };
+};
+==========
+
+homework/knapsack-problem
+---
+var f = function(n,W,weights,costs){
+    var A=[];
+    for(var i=0;i<=n;++i)
+        A.push([]);
+    for(i=0;i<=n;++i)
+    {
+        for(var k=0;k<=W;++k)
+        {
+            A[i][k]=0;
+        }
+    }
+    
+    for(i=1;i<=n;++i)
+    {
+        for(var j=0;j<=W;++j)
+        {
+            if(weights[i-1]>j)
+            {
+                A[i][j]=A[i-1][j];
+            }
+            else
+            {
+                A[i][j]=Math.max(A[i-1][j],A[i-1][j-weights[i-1]]+costs[i-1]);
+            }
+        }
+    }
+    
+    return A[n][W];
+};
+==========
+
+homework/prime-numbers
+---
+var f = function(n){
+    var isPrime=function(a)
+    {
+        if(a<2)
+            return false;
+        for(var i=2;i<a;++i)
+            if(a%i===0)
+                return false;
+        return true;
+    };
+    var result={left:-1,right:-1};
+    if(typeof(n)!=='number')
+        return result;
+    for(var i=Math.ceil(n-1);i>=2;--i)
+    {
+        if(isPrime(i))
+        {
+            result.left=i;
+            break;
+        }
+    }
+    for(var j=Math.floor(n+1);;++j)
+        if(isPrime(j))
+        {
+            result.right=j;
+            break;
+        }
+    return result;
+};
+==========
+
+homework/sum-of-odd-numbers
+---
+var f = function(){
+    var result=0;
+    for(var i=0;i<arguments.length;++i)
+    {
+        if(typeof (arguments[i])===typeof(-1) && (arguments[i]&1)===1)
+            result+=arguments[i];
+        else if($.isArray(arguments[i]))
+            result+=f.apply(this,arguments[i]);
+    }
+    return result;
+};
+
+==========
+
+homework/sum-zero
+---
+var f = function(n){
+    var zero=[];
+    if(typeof(n)!==typeof([1,2,3]))
+        return -1;
+    for(var i in n)
+        if(typeof(n[i])!==typeof(2.3))
+            return -1;
+    for(var j in n)
+    {
+        for(var k in n)
+        {
+            if(j===k)
+                continue;
+            if(n[j]+n[k]===0)
+            {
+                zero.push(n[j]);
+                zero.push(n[k]);
+                delete n[j];
+                delete n[k];
+            }
+        }
+    }
+    return {zero:zero,rest:n.filter(function(a){return a;})};
+};
+==========
+
