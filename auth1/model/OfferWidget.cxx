@@ -10,10 +10,10 @@ OfferWidget::OfferWidget(Session &session, Wt::WContainerWidget *parent): WConta
 {
     _tableView = new Wt::WTableView();
     _tableView->setAlternatingRowColors(true);
-    Wt::Dbo::QueryModel<Wt::Dbo::ptr< Item >> *model = new Wt::Dbo::QueryModel<Wt::Dbo::ptr< Item>>(this);
-    model->setQuery(_session.find<Item>());
-    model->addAllFieldsAsColumns();
-    _tableView->setModel(model);
+  //  Wt::Dbo::QueryModel<Wt::Dbo::ptr< Item >> *model = new Wt::Dbo::QueryModel<Wt::Dbo::ptr< Item>>(this);
+   // model->setQuery(_session.find<Item>());
+   // model->addAllFieldsAsColumns();
+   // _tableView->setModel(model);
 
 
     addWidget(_tableView);

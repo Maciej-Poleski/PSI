@@ -15,74 +15,75 @@
 #include "Wt/Auth/Dbo/AuthInfo"
 #include "Wt/Auth/Dbo/UserDatabase"
 
-namespace {
+namespace
+{
 
-  Wt::Auth::AuthService myAuthService;
-  Wt::Auth::PasswordService myPasswordService(myAuthService);
+Wt::Auth::AuthService myAuthService;
+Wt::Auth::PasswordService myPasswordService(myAuthService);
 
 }
 
 void Session::configureAuth()
 {
-  myAuthService.setAuthTokensEnabled(true, "logincookie");
+    myAuthService.setAuthTokensEnabled(true, "logincookie");
 
-  Wt::Auth::PasswordVerifier *verifier = new Wt::Auth::PasswordVerifier();
-  verifier->addHashFunction(new Wt::Auth::BCryptHashFunction(7));
-  myPasswordService.setVerifier(verifier);
-  myPasswordService.setAttemptThrottlingEnabled(true);
-  myPasswordService.setStrengthValidator
+    Wt::Auth::PasswordVerifier *verifier = new Wt::Auth::PasswordVerifier();
+    verifier->addHashFunction(new Wt::Auth::BCryptHashFunction(7));
+    myPasswordService.setVerifier(verifier);
+    myPasswordService.setAttemptThrottlingEnabled(true);
+    myPasswordService.setStrengthValidator
     (new Wt::Auth::PasswordStrengthValidator());
 }
 
-Session::Session(const std::string& sqliteDb)
-  : connection_(sqliteDb)
+Session::Session(const std::string &sqliteDb)
+    : connection_(sqliteDb)
 {
-  connection_.setProperty("show-queries", "true");
+    connection_.setProperty("show-queries", "true");
 
-  setConnection(connection_);
+    setConnection(connection_);
 
-  mapClass<User>("user");
-  mapClass<AuthInfo>("auth_info");
-  mapClass<AuthInfo::AuthIdentityType>("auth_identity");
-  mapClass<AuthInfo::AuthTokenType>("auth_token");
-  mapClass<Item>("items");
+    mapClass<User>("user");
+    mapClass<AuthInfo>("auth_info");
+    mapClass<AuthInfo::AuthIdentityType>("auth_identity");
+    mapClass<AuthInfo::AuthTokenType>("auth_token");
+    mapClass<Item>("items");
 
-  try {
-    createTables();
-    std::cerr << "Created database." << std::endl;
-  } catch (std::exception& e) {
-    std::cerr << e.what() << std::endl;
-    std::cerr << "Using existing database";
-  }
+    try {
+        createTables();
+        std::cerr << "Created database." << std::endl;
+    } catch (std::exception &e) {
+        std::cerr << e.what() << std::endl;
+        std::cerr << "Using existing database";
+    }
 
-  users_ = new UserDatabase(*this);
+    users_ = new UserDatabase(*this);
 }
 
 Session::~Session()
 {
-  delete users_;
+    delete users_;
 }
 
-Wt::Auth::AbstractUserDatabase& Session::users()
+Wt::Auth::AbstractUserDatabase &Session::users()
 {
-  return *users_;
+    return *users_;
 }
 
 dbo::ptr<User> Session::user() const
 {
-  if (login_.loggedIn()) {
-    dbo::ptr<AuthInfo> authInfo = users_->find(login_.user());
-    return authInfo->user();
-  } else
-    return dbo::ptr<User>();
+    if (login_.loggedIn()) {
+        dbo::ptr<AuthInfo> authInfo = users_->find(login_.user());
+        return authInfo->user();
+    } else
+        return dbo::ptr<User>();
 }
 
-const Wt::Auth::AuthService& Session::auth()
+const Wt::Auth::AuthService &Session::auth()
 {
-  return myAuthService;
+    return myAuthService;
 }
 
-const Wt::Auth::PasswordService& Session::passwordAuth()
+const Wt::Auth::PasswordService &Session::passwordAuth()
 {
-  return myPasswordService;
+    return myPasswordService;
 }

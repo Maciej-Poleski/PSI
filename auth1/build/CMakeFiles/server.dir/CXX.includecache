@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/local_user/studia/psi/auth1/model/Item.cxx
-Item.hxx
-/home/local_user/studia/psi/auth1/model/Item.hxx
-
 /home/local_user/studia/psi/auth1/model/Item.hxx
 string
 -
@@ -19,25 +15,9 @@ Wt/Dbo/Session
 -
 Wt/Dbo/SqlTraits
 -
-boost/concept_check.hpp
+Wt/Dbo/Types
 -
-
-/home/local_user/studia/psi/auth1/model/OfferWidget.cxx
-OfferWidget.hxx
-/home/local_user/studia/psi/auth1/model/OfferWidget.hxx
-Item.hxx
-/home/local_user/studia/psi/auth1/model/Item.hxx
-Session.h
-/home/local_user/studia/psi/auth1/model/Session.h
-Wt/WApplication
--
-Wt/WTableView
--
-Wt/Dbo/QueryModel
--
-
-/home/local_user/studia/psi/auth1/model/OfferWidget.hxx
-Wt/WContainerWidget
+Wt/WGlobal
 -
 
 /home/local_user/studia/psi/auth1/model/Session.C
