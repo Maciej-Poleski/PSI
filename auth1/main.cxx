@@ -1,8 +1,3 @@
-/*
- * Copyright (C) 2010 Emweb bvba, Kessel-Lo, Belgium.
- *
- * See the LICENSE file for terms of use.
- */
 #include <Wt/WApplication>
 #include <Wt/WContainerWidget>
 #include <Wt/WServer>
@@ -15,6 +10,7 @@
 
 #include "model/Session.h"
 #include "model/OfferWidget.hxx"
+#include "model/CardWidget.hxx"
 
 class AuthApplication : public Wt::WApplication
 {
@@ -22,23 +18,28 @@ public:
     AuthApplication(const Wt::WEnvironment &env)
         : Wt::WApplication(env),
           session_(appRoot() + "auth.db") {
-        session_.login().changed().connect(this, &AuthApplication::authEvent);
-
-        useStyleSheet("css/style.css");
 
         Wt::Auth::AuthWidget *authWidget
-        = new Wt::Auth::AuthWidget(Session::auth(), session_.users(),
-                                   session_.login());
+            = new Wt::Auth::AuthWidget(Session::auth(), session_.users(),
+                                       session_.login());
+        tabWidget = new Wt::WTabWidget(root());
+
+        tabWidget->addTab(authWidget, "Zaloguj");
+        _offerWidget=new OfferWidget(session_);
+        tabWidget->addTab(_offerWidget,"Oferta");
+        _cardWidget=new CardWidget(session_);
+        tabWidget->addTab(_cardWidget,"Koszyk");
+        tabWidget->setTabHidden(2,true);
+
+        session_.login().changed().connect(this, &AuthApplication::authEvent);
+        session_.login().changed().connect(_cardWidget,&CardWidget::userChanged);
+
+        useStyleSheet("css/style.css");
 
         authWidget->model()->addPasswordAuth(&Session::passwordAuth());
         authWidget->setRegistrationEnabled(true);
 
         authWidget->processEnvironment();
-
-        tabWidget = new Wt::WTabWidget(root());
-
-        tabWidget->addTab(authWidget, "Zaloguj");
-        tabWidget->addTab(new OfferWidget(session_),"Oferta");
     }
 
     void authEvent() {
@@ -46,13 +47,18 @@ public:
             Wt::log("notice") << "User " << session_.login().user().id()
                               << " logged in.";
             tabWidget->setTabText(0, "Wyloguj");
+            tabWidget->setTabHidden(2,false);
         } else {
             Wt::log("notice") << "User logged out.";
             tabWidget->setTabText(0, "Zaloguj");
+            tabWidget->setTabHidden(2,true);
         }
     }
 
 private:
+    OfferWidget *_offerWidget;
+    CardWidget *_cardWidget;
+
     Wt::WTabWidget *tabWidget;
     Session session_;
 };

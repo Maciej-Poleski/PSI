@@ -8,12 +8,12 @@ Current Build Directory Index=0
 ProjectRootRelative=./
 
 [CMake][CMake Build Directory 0]
-Build Directory Path=file:///home/local_user/studia/psi/auth1/build
+Build Directory Path=file:///home/evil/Studia/Przedmioty/PSI/auth1/build
 Build Type=Debug
 CMake Binary=file:///usr/bin/cmake
-Environment Profile=
-Extra Arguments=-DCMAKE_MODULE_PATH="/usr/lib/Wt/cmake"
-Install Directory=
+Environment Profile=satori
+Extra Arguments=-DCMAKE_MODULE_PATH="/usr/cmake"
+Install Directory=file:///usr/local
 
 [Launch]
 Launch Configurations=Launch Configuration 0
@@ -26,12 +26,15 @@ Type=Native Application
 
 [Launch][Launch Configuration 0][Data]
 Arguments=--docroot . --http-address 0.0.0.0 --http-port 8080\n
-Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
-Dependency Action=Nothing
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\n\x00a\x00u\x00t\x00h\x001\x00\x00\x00\x0c\x00s\x00e\x00r\x00v\x00e\x00r)
+Dependency Action=Build
 EnvironmentGroup=default
 Executable=
 External Terminal=konsole --noclose --workdir %workdir -e %exe
 Project Target=auth1,server
 Use External Terminal=false
-Working Directory=file:///home/local_user/studia/psi/auth1
+Working Directory=file:///home/evil/Studia/Przedmioty/PSI/auth1
 isExecutable=false
+
+[SourceFileTemplates]
+LastUsedTemplate=/home/evil/.kde4/share/apps/kdevfiletemplates/template_descriptions/cpp_basic.desktop

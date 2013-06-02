@@ -4,11 +4,13 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/local_user/studia/psi/auth1/main.cxx" "/home/local_user/studia/psi/auth1/build/CMakeFiles/server.dir/main.cxx.o"
-  "/home/local_user/studia/psi/auth1/model/Item.cxx" "/home/local_user/studia/psi/auth1/build/CMakeFiles/server.dir/model/Item.cxx.o"
-  "/home/local_user/studia/psi/auth1/model/OfferWidget.cxx" "/home/local_user/studia/psi/auth1/build/CMakeFiles/server.dir/model/OfferWidget.cxx.o"
-  "/home/local_user/studia/psi/auth1/model/Session.C" "/home/local_user/studia/psi/auth1/build/CMakeFiles/server.dir/model/Session.C.o"
-  "/home/local_user/studia/psi/auth1/model/User.C" "/home/local_user/studia/psi/auth1/build/CMakeFiles/server.dir/model/User.C.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/main.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/main.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/CardItem.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/CardItem.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/CardWidget.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/CardWidget.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/Item.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/Item.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/OfferWidget.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/OfferWidget.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/Session.C" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/Session.C.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/User.C" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/User.C.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,28 +1,39 @@
-// This may look like C code, but it's really -*- C++ -*-
-/*
- * Copyright (C) 2009 Emweb bvba, Kessel-Lo, Belgium.
- *
- * See the LICENSE file for terms of use.
- */
 #ifndef USER_H_
 #define USER_H_
 
 #include <Wt/Dbo/Types>
 #include <Wt/WGlobal>
+#include <Wt/WSignal>
 
+class CardItem;
+class Item;
 namespace dbo = Wt::Dbo;
 
 class User;
 typedef Wt::Auth::Dbo::AuthInfo<User> AuthInfo;
 
-class User {
+class User : public Wt::Dbo::Dbo<User> {
 public:
-  /* You probably want to add other user information here */
 
-  template<class Action>
-  void persist(Action& a)
-  {
-  }
+    void addItem(Wt::Dbo::ptr< Item > item, std::size_t count = 1);
+    void removeItem(Wt::Dbo::ptr< Item > item, std::size_t count = 1);
+
+    template<class Action>
+    void persist(Action& a)
+    {
+        dbo::field(a,_isAdministrator,"is_administrator");
+        dbo::hasMany(a,cardItems,Wt::Dbo::ManyToOne,"user");
+    }
+
+    Wt::Signal<> & cardChanged() const;
+
+    
+    bool _isAdministrator=false;
+
+private:
+    dbo::collection<dbo::ptr<CardItem>> cardItems;
+
+    mutable Wt::Signal<> _cardChanged;
 };
 
 

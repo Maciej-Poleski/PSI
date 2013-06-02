@@ -1,19 +1,14 @@
-// This may look like C code, but it's really -*- C++ -*-
-/*
- * Copyright (C) 2009 Emweb bvba, Kessel-Lo, Belgium.
- *
- * See the LICENSE file for terms of use.
- */
 #ifndef SESSION_H_
 #define SESSION_H_
-
-#include <Wt/Auth/Login>
 
 #include <Wt/Dbo/Session>
 #include <Wt/Dbo/ptr>
 #include <Wt/Dbo/backend/Sqlite3>
 
+#include <Wt/Auth/Login>
+
 #include "User.h"
+#include "Item.hxx"
 
 namespace dbo = Wt::Dbo;
 

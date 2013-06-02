@@ -1,4 +1,4 @@
-The system is: Linux - 3.8.0-23-generic - x86_64
+The system is: Linux - 3.9.4-gentoo - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/local_user/studia/psi/auth1/build/CMakeFiles/2.8.10.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/2.8.11/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: /usr/bin/g++ 
 Build flags: 
 Id flags: 
 
@@ -23,99 +23,92 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/local_user/studia/psi/auth1/build/CMakeFiles/2.8.10.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/2.8.11/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp
+Change Dir: /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2223777907/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2223777907.dir/build.make CMakeFiles/cmTryCompileExec2223777907.dir/build
-make[1]: Entering directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2223777907.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2223777907.dir/testCCompiler.c.o   -c /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec2223777907
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2223777907.dir/link.txt --verbose=1
-/usr/bin/cc         CMakeFiles/cmTryCompileExec2223777907.dir/testCCompiler.c.o  -o cmTryCompileExec2223777907 -rdynamic 
-make[1]: Leaving directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4105690019/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec4105690019.dir/build.make CMakeFiles/cmTryCompileExec4105690019.dir/build
+gmake[1]: Entering directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4105690019.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4105690019.dir/testCCompiler.c.o   -c /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec4105690019
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4105690019.dir/link.txt --verbose=1
+/usr/bin/cc         CMakeFiles/cmTryCompileExec4105690019.dir/testCCompiler.c.o  -o cmTryCompileExec4105690019 -rdynamic 
+gmake[1]: Leaving directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp
+Change Dir: /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1045308155/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1045308155.dir/build.make CMakeFiles/cmTryCompileExec1045308155.dir/build
-make[1]: Entering directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec1045308155
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1045308155.dir/link.txt --verbose=1
-/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1045308155 -rdynamic  
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1447092285/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1447092285.dir/build.make CMakeFiles/cmTryCompileExec1447092285.dir/build
+gmake[1]: Entering directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1447092285
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1447092285.dir/link.txt --verbose=1
+/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1447092285 -rdynamic  
 Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2/gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /home/build/portage/sys-devel/gcc-4.7.2-r1/work/gcc-4.7.2/configure --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include/g++-v4 --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --disable-altivec --disable-fixed-point --with-ppl --with-cloog --disable-ppl-version-check --with-cloog-include=/usr/include/cloog-ppl --enable-lto --enable-nls --without-included-gettext --with-system-zlib --enable-obsolete --disable-werror --enable-secureplt --enable-multilib --with-multilib-list=m32,m64 --enable-libmudflap --disable-libssp --enable-libgomp --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/python --enable-checking=release --disable-libgcj --enable-libstdcxx-time --disable-libquadmath --enable-languages=c,c++ --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-targets=all --with-bugurl=http://bugs.gentoo.org/ --with-pkgversion='Gentoo 4.7.2-r1 p1.5, pie-0.5.5'
 Thread model: posix
-gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1045308155' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1045308155 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
+gcc version 4.7.2 (Gentoo 4.7.2-r1 p1.5, pie-0.5.5) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1447092285' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1447092285 /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1045308155/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1045308155.dir/build.make CMakeFiles/cmTryCompileExec1045308155.dir/build]
-  ignore line: [make[1]: Entering directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec1045308155]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1045308155.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1045308155 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec1447092285/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1447092285.dir/build.make CMakeFiles/cmTryCompileExec1447092285.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1447092285]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1447092285.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc       -v CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1447092285 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /home/build/portage/sys-devel/gcc-4.7.2-r1/work/gcc-4.7.2/configure --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include/g++-v4 --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --disable-altivec --disable-fixed-point --with-ppl --with-cloog --disable-ppl-version-check --with-cloog-include=/usr/include/cloog-ppl --enable-lto --enable-nls --without-included-gettext --with-system-zlib --enable-obsolete --disable-werror --enable-secureplt --enable-multilib --with-multilib-list=m32,m64 --enable-libmudflap --disable-libssp --enable-libgomp --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/python --enable-checking=release --disable-libgcj --enable-libstdcxx-time --disable-libquadmath --enable-languages=c,c++ --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-targets=all --with-bugurl=http://bugs.gentoo.org/ --with-pkgversion='Gentoo 4.7.2-r1 p1.5, pie-0.5.5']
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1045308155' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1045308155 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/collect2] ==> ignore
-    arg [--sysroot=/] ==> ignore
-    arg [--build-id] ==> ignore
+  ignore line: [gcc version 4.7.2 (Gentoo 4.7.2-r1 p1.5, pie-0.5.5) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1447092285' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1447092285 /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/collect2] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1045308155] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..]
-    arg [CMakeFiles/cmTryCompileExec1045308155.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTryCompileExec1447092285] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec1447092285.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -125,115 +118,107 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.7]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> [/usr/lib]
-  collapse dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse dir [/lib/../lib] ==> [/lib]
-  collapse dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib] ==> [/usr/x86_64-pc-linux-gnu/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../..] ==> [/usr/lib]
   implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2;/usr/lib64;/lib64;/usr/x86_64-pc-linux-gnu/lib;/usr/lib]
+  implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp
+Change Dir: /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec874582419/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec874582419.dir/build.make CMakeFiles/cmTryCompileExec874582419.dir/build
-make[1]: Entering directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec874582419.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec874582419.dir/testCXXCompiler.cxx.o -c /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec874582419
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec874582419.dir/link.txt --verbose=1
-/usr/bin/c++          CMakeFiles/cmTryCompileExec874582419.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec874582419 -rdynamic 
-make[1]: Leaving directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2059062366/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2059062366.dir/build.make CMakeFiles/cmTryCompileExec2059062366.dir/build
+gmake[1]: Entering directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2059062366.dir/testCXXCompiler.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec2059062366.dir/testCXXCompiler.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2059062366
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2059062366.dir/link.txt --verbose=1
+/usr/bin/g++          CMakeFiles/cmTryCompileExec2059062366.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2059062366 -rdynamic 
+gmake[1]: Leaving directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp
+Change Dir: /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec529799832/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec529799832.dir/build.make CMakeFiles/cmTryCompileExec529799832.dir/build
-make[1]: Entering directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec529799832
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec529799832.dir/link.txt --verbose=1
-/usr/bin/c++        -v CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec529799832 -rdynamic  
+Run Build Command:/usr/bin/gmake "cmTryCompileExec218742763/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec218742763.dir/build.make CMakeFiles/cmTryCompileExec218742763.dir/build
+gmake[1]: Entering directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec218742763
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec218742763.dir/link.txt --verbose=1
+/usr/bin/g++        -v CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec218742763 -rdynamic  
 Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2/g++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /home/build/portage/sys-devel/gcc-4.7.2-r1/work/gcc-4.7.2/configure --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include/g++-v4 --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --disable-altivec --disable-fixed-point --with-ppl --with-cloog --disable-ppl-version-check --with-cloog-include=/usr/include/cloog-ppl --enable-lto --enable-nls --without-included-gettext --with-system-zlib --enable-obsolete --disable-werror --enable-secureplt --enable-multilib --with-multilib-list=m32,m64 --enable-libmudflap --disable-libssp --enable-libgomp --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/python --enable-checking=release --disable-libgcj --enable-libstdcxx-time --disable-libquadmath --enable-languages=c,c++ --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-targets=all --with-bugurl=http://bugs.gentoo.org/ --with-pkgversion='Gentoo 4.7.2-r1 p1.5, pie-0.5.5'
 Thread model: posix
-gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec529799832' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec529799832 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp'
+gcc version 4.7.2 (Gentoo 4.7.2-r1 p1.5, pie-0.5.5) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec218742763' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec218742763 /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec529799832/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec529799832.dir/build.make CMakeFiles/cmTryCompileExec529799832.dir/build]
-  ignore line: [make[1]: Entering directory `/home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/local_user/studia/psi/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec529799832]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec529799832.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec529799832 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec218742763/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec218742763.dir/build.make CMakeFiles/cmTryCompileExec218742763.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++     -o CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec218742763]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec218742763.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++        -v CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec218742763 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-1ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /home/build/portage/sys-devel/gcc-4.7.2-r1/work/gcc-4.7.2/configure --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.2 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/include/g++-v4 --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --disable-altivec --disable-fixed-point --with-ppl --with-cloog --disable-ppl-version-check --with-cloog-include=/usr/include/cloog-ppl --enable-lto --enable-nls --without-included-gettext --with-system-zlib --enable-obsolete --disable-werror --enable-secureplt --enable-multilib --with-multilib-list=m32,m64 --enable-libmudflap --disable-libssp --enable-libgomp --with-python-dir=/share/gcc-data/x86_64-pc-linux-gnu/4.7.2/python --enable-checking=release --disable-libgcj --enable-libstdcxx-time --disable-libquadmath --enable-languages=c,c++ --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-targets=all --with-bugurl=http://bugs.gentoo.org/ --with-pkgversion='Gentoo 4.7.2-r1 p1.5, pie-0.5.5']
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec529799832' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec529799832 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/collect2] ==> ignore
-    arg [--sysroot=/] ==> ignore
-    arg [--build-id] ==> ignore
+  ignore line: [gcc version 4.7.2 (Gentoo 4.7.2-r1 p1.5, pie-0.5.5) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/libexec/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec218742763' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec218742763 /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../.. CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-pc-linux-gnu/4.7.2/collect2] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec529799832] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..]
-    arg [CMakeFiles/cmTryCompileExec529799832.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTryCompileExec218742763] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec218742763.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -241,21 +226,20 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64/crtn.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.7]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> [/usr/lib]
-  collapse dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse dir [/lib/../lib] ==> [/lib]
-  collapse dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../../../x86_64-pc-linux-gnu/lib] ==> [/usr/x86_64-pc-linux-gnu/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/4.7.2;/usr/lib64;/lib64;/usr/x86_64-pc-linux-gnu/lib;/usr/lib]
+  implicit fwks: []
 
 

@@ -1,5 +1,10 @@
 #include "Item.hxx"
 
 #include <Wt/Dbo/Impl>
+#include <Wt/Auth/Dbo/AuthInfo>
 
-// DBO_INSTANTIATE_TEMPLATES(Item);
+#include "CardItem.hxx"
+#include "User.h"
+
+DBO_INSTANTIATE_TEMPLATES(Item);
+

@@ -39,13 +39,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/local_user/studia/psi/auth1
+CMAKE_SOURCE_DIR = /home/evil/Studia/Przedmioty/PSI/auth1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/local_user/studia/psi/auth1/build
+CMAKE_BINARY_DIR = /home/evil/Studia/Przedmioty/PSI/auth1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/local_user/studia/psi/auth1/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -113,9 +113,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/local_user/studia/psi/auth1/build/CMakeFiles /home/local_user/studia/psi/auth1/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/local_user/studia/psi/auth1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -178,6 +178,54 @@ main.s: main.cxx.s
 main.cxx.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cxx.s
 .PHONY : main.cxx.s
+
+model/CardItem.o: model/CardItem.cxx.o
+.PHONY : model/CardItem.o
+
+# target to build an object file
+model/CardItem.cxx.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/CardItem.cxx.o
+.PHONY : model/CardItem.cxx.o
+
+model/CardItem.i: model/CardItem.cxx.i
+.PHONY : model/CardItem.i
+
+# target to preprocess a source file
+model/CardItem.cxx.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/CardItem.cxx.i
+.PHONY : model/CardItem.cxx.i
+
+model/CardItem.s: model/CardItem.cxx.s
+.PHONY : model/CardItem.s
+
+# target to generate assembly for a file
+model/CardItem.cxx.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/CardItem.cxx.s
+.PHONY : model/CardItem.cxx.s
+
+model/CardWidget.o: model/CardWidget.cxx.o
+.PHONY : model/CardWidget.o
+
+# target to build an object file
+model/CardWidget.cxx.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/CardWidget.cxx.o
+.PHONY : model/CardWidget.cxx.o
+
+model/CardWidget.i: model/CardWidget.cxx.i
+.PHONY : model/CardWidget.i
+
+# target to preprocess a source file
+model/CardWidget.cxx.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/CardWidget.cxx.i
+.PHONY : model/CardWidget.cxx.i
+
+model/CardWidget.s: model/CardWidget.cxx.s
+.PHONY : model/CardWidget.s
+
+# target to generate assembly for a file
+model/CardWidget.cxx.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/CardWidget.cxx.s
+.PHONY : model/CardWidget.cxx.s
 
 model/Item.o: model/Item.cxx.o
 .PHONY : model/Item.o
@@ -291,6 +339,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/CardItem.o"
+	@echo "... model/CardItem.i"
+	@echo "... model/CardItem.s"
+	@echo "... model/CardWidget.o"
+	@echo "... model/CardWidget.i"
+	@echo "... model/CardWidget.s"
 	@echo "... model/Item.o"
 	@echo "... model/Item.i"
 	@echo "... model/Item.s"
