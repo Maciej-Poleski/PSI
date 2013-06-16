@@ -5,6 +5,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/evil/Studia/Przedmioty/PSI/auth1/main.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/main.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/BuyModel.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/BuyWidget.cxx.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/CardItem.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/CardItem.cxx.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/CardWidget.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/CardWidget.cxx.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/Item.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/Item.cxx.o"

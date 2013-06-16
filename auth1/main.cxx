@@ -11,6 +11,7 @@
 #include "model/Session.h"
 #include "model/OfferWidget.hxx"
 #include "model/CardWidget.hxx"
+#include "model/BuyWidget.hxx"
 
 class AuthApplication : public Wt::WApplication
 {
@@ -30,9 +31,13 @@ public:
         _cardWidget=new CardWidget(session_);
         tabWidget->addTab(_cardWidget,"Koszyk");
         tabWidget->setTabHidden(2,true);
+        _buyWidget=new BuyWidget(session_);
+        tabWidget->addTab(_buyWidget,"Transakcja");
+        tabWidget->setTabHidden(3,true);
 
         session_.login().changed().connect(this, &AuthApplication::authEvent);
         session_.login().changed().connect(_cardWidget,&CardWidget::userChanged);
+        session_.login().changed().connect(_buyWidget,&BuyWidget::userChanged);
 
         useStyleSheet("css/style.css");
 
@@ -48,16 +53,19 @@ public:
                               << " logged in.";
             tabWidget->setTabText(0, "Wyloguj");
             tabWidget->setTabHidden(2,false);
+            tabWidget->setTabHidden(3,false);
         } else {
             Wt::log("notice") << "User logged out.";
             tabWidget->setTabText(0, "Zaloguj");
             tabWidget->setTabHidden(2,true);
+            tabWidget->setTabHidden(3,true);
         }
     }
 
 private:
     OfferWidget *_offerWidget;
     CardWidget *_cardWidget;
+    BuyWidget *_buyWidget;
 
     Wt::WTabWidget *tabWidget;
     Session session_;

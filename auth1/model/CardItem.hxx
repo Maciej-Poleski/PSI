@@ -18,6 +18,10 @@ public:
     std::int64_t count;
     Wt::Dbo::ptr<User> user;
 
+    std::string name() const;
+    std::int64_t costPerItem() const;
+    std::int64_t totalPrice() const;
+
     template<class Action>
     void persist(Action &a)
     {

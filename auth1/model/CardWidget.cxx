@@ -28,9 +28,8 @@ CardWidget::CardWidget(Session& session, Wt::WContainerWidget* parent) :
     _model = new Wt::Dbo::QueryModel<boost::tuple<Wt::Dbo::ptr< Item >,Wt::Dbo::ptr<CardItem>,std::int64_t>>(this);
 
     _tableView->setModel(_model);
-    _tableView->setColumnWidth(0,400);
     _tableView->setColumnResizeEnabled(false);
-    _tableView->clicked().connect(this,&CardWidget::dispatchClick);
+    _tableView->mouseWentUp().connect(this,&CardWidget::dispatchClick);
 
     _layout=new Wt::WVBoxLayout();
     _layout->addWidget(_tableView);

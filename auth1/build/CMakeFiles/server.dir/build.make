@@ -52,9 +52,55 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
+CMakeFiles/server.dir/model/BuyModel.cxx.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/model/BuyModel.cxx.o: ../model/BuyModel.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/BuyModel.cxx.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/BuyModel.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.cxx
+
+CMakeFiles/server.dir/model/BuyModel.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/model/BuyModel.cxx.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.cxx > CMakeFiles/server.dir/model/BuyModel.cxx.i
+
+CMakeFiles/server.dir/model/BuyModel.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/model/BuyModel.cxx.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.cxx -o CMakeFiles/server.dir/model/BuyModel.cxx.s
+
+CMakeFiles/server.dir/model/BuyModel.cxx.o.requires:
+.PHONY : CMakeFiles/server.dir/model/BuyModel.cxx.o.requires
+
+CMakeFiles/server.dir/model/BuyModel.cxx.o.provides: CMakeFiles/server.dir/model/BuyModel.cxx.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyModel.cxx.o.provides.build
+.PHONY : CMakeFiles/server.dir/model/BuyModel.cxx.o.provides
+
+CMakeFiles/server.dir/model/BuyModel.cxx.o.provides.build: CMakeFiles/server.dir/model/BuyModel.cxx.o
+
+CMakeFiles/server.dir/model/BuyWidget.cxx.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/model/BuyWidget.cxx.o: ../model/BuyWidget.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/BuyWidget.cxx.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/BuyWidget.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.cxx
+
+CMakeFiles/server.dir/model/BuyWidget.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/model/BuyWidget.cxx.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.cxx > CMakeFiles/server.dir/model/BuyWidget.cxx.i
+
+CMakeFiles/server.dir/model/BuyWidget.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/model/BuyWidget.cxx.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.cxx -o CMakeFiles/server.dir/model/BuyWidget.cxx.s
+
+CMakeFiles/server.dir/model/BuyWidget.cxx.o.requires:
+.PHONY : CMakeFiles/server.dir/model/BuyWidget.cxx.o.requires
+
+CMakeFiles/server.dir/model/BuyWidget.cxx.o.provides: CMakeFiles/server.dir/model/BuyWidget.cxx.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyWidget.cxx.o.provides.build
+.PHONY : CMakeFiles/server.dir/model/BuyWidget.cxx.o.provides
+
+CMakeFiles/server.dir/model/BuyWidget.cxx.o.provides.build: CMakeFiles/server.dir/model/BuyWidget.cxx.o
+
 CMakeFiles/server.dir/model/CardWidget.cxx.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/model/CardWidget.cxx.o: ../model/CardWidget.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/CardWidget.cxx.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/CardWidget.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/CardWidget.cxx
 
@@ -77,7 +123,7 @@ CMakeFiles/server.dir/model/CardWidget.cxx.o.provides.build: CMakeFiles/server.d
 
 CMakeFiles/server.dir/model/CardItem.cxx.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/model/CardItem.cxx.o: ../model/CardItem.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/CardItem.cxx.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/CardItem.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/CardItem.cxx
 
@@ -100,7 +146,7 @@ CMakeFiles/server.dir/model/CardItem.cxx.o.provides.build: CMakeFiles/server.dir
 
 CMakeFiles/server.dir/model/Item.cxx.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/model/Item.cxx.o: ../model/Item.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/Item.cxx.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/Item.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/Item.cxx
 
@@ -123,7 +169,7 @@ CMakeFiles/server.dir/model/Item.cxx.o.provides.build: CMakeFiles/server.dir/mod
 
 CMakeFiles/server.dir/model/OfferWidget.cxx.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/model/OfferWidget.cxx.o: ../model/OfferWidget.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/OfferWidget.cxx.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/OfferWidget.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/OfferWidget.cxx
 
@@ -146,7 +192,7 @@ CMakeFiles/server.dir/model/OfferWidget.cxx.o.provides.build: CMakeFiles/server.
 
 CMakeFiles/server.dir/main.cxx.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/main.cxx.o: ../main.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/main.cxx.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/main.cxx.o -c /home/evil/Studia/Przedmioty/PSI/auth1/main.cxx
 
@@ -169,7 +215,7 @@ CMakeFiles/server.dir/main.cxx.o.provides.build: CMakeFiles/server.dir/main.cxx.
 
 CMakeFiles/server.dir/model/Session.C.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/model/Session.C.o: ../model/Session.C
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/Session.C.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/Session.C.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.C
 
@@ -192,7 +238,7 @@ CMakeFiles/server.dir/model/Session.C.o.provides.build: CMakeFiles/server.dir/mo
 
 CMakeFiles/server.dir/model/User.C.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/model/User.C.o: ../model/User.C
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/server.dir/model/User.C.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/server.dir/model/User.C.o -c /home/evil/Studia/Przedmioty/PSI/auth1/model/User.C
 
@@ -215,6 +261,8 @@ CMakeFiles/server.dir/model/User.C.o.provides.build: CMakeFiles/server.dir/model
 
 # Object files for target server
 server_OBJECTS = \
+"CMakeFiles/server.dir/model/BuyModel.cxx.o" \
+"CMakeFiles/server.dir/model/BuyWidget.cxx.o" \
 "CMakeFiles/server.dir/model/CardWidget.cxx.o" \
 "CMakeFiles/server.dir/model/CardItem.cxx.o" \
 "CMakeFiles/server.dir/model/Item.cxx.o" \
@@ -226,6 +274,8 @@ server_OBJECTS = \
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
+server: CMakeFiles/server.dir/model/BuyModel.cxx.o
+server: CMakeFiles/server.dir/model/BuyWidget.cxx.o
 server: CMakeFiles/server.dir/model/CardWidget.cxx.o
 server: CMakeFiles/server.dir/model/CardItem.cxx.o
 server: CMakeFiles/server.dir/model/Item.cxx.o
@@ -248,6 +298,8 @@ server: CMakeFiles/server.dir/link.txt
 CMakeFiles/server.dir/build: server
 .PHONY : CMakeFiles/server.dir/build
 
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/model/BuyModel.cxx.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/model/BuyWidget.cxx.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/model/CardWidget.cxx.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/model/CardItem.cxx.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/model/Item.cxx.o.requires

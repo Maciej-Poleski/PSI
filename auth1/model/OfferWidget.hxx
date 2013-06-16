@@ -11,6 +11,8 @@ class OfferWidget : public Wt::WContainerWidget
 public:
     explicit OfferWidget(Session &session, WContainerWidget *parent = 0);
 
+    void reloadData();
+
 private:
     void dispatchClick(const Wt::WModelIndex& modelIndex);
 

@@ -3,9 +3,24 @@
 
 CMakeFiles/server.dir/main.cxx.o
  /home/evil/Studia/Przedmioty/PSI/auth1/main.cxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/CardWidget.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/Item.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/OfferWidget.hxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.h
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/User.h
+CMakeFiles/server.dir/model/BuyModel.cxx.o
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.cxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.hxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/CardItem.hxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/Item.hxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.h
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/User.h
+CMakeFiles/server.dir/model/BuyWidget.cxx.o
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.hxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.cxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.hxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/Item.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.h
  /home/evil/Studia/Przedmioty/PSI/auth1/model/User.h
 CMakeFiles/server.dir/model/CardItem.cxx.o

@@ -9,6 +9,8 @@ INCLUDE_DIRECTORIES( ${Wt_INCLUDE_DIR} )
 include_directories(${Boost_INCLUDE_DIR})
 
 add_executable(server
+    model/BuyModel.cxx
+    model/BuyWidget.cxx
     model/CardWidget.cxx
     model/CardItem.cxx
     model/Item.cxx 

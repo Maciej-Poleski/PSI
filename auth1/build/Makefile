@@ -179,6 +179,54 @@ main.cxx.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cxx.s
 .PHONY : main.cxx.s
 
+model/BuyModel.o: model/BuyModel.cxx.o
+.PHONY : model/BuyModel.o
+
+# target to build an object file
+model/BuyModel.cxx.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyModel.cxx.o
+.PHONY : model/BuyModel.cxx.o
+
+model/BuyModel.i: model/BuyModel.cxx.i
+.PHONY : model/BuyModel.i
+
+# target to preprocess a source file
+model/BuyModel.cxx.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyModel.cxx.i
+.PHONY : model/BuyModel.cxx.i
+
+model/BuyModel.s: model/BuyModel.cxx.s
+.PHONY : model/BuyModel.s
+
+# target to generate assembly for a file
+model/BuyModel.cxx.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyModel.cxx.s
+.PHONY : model/BuyModel.cxx.s
+
+model/BuyWidget.o: model/BuyWidget.cxx.o
+.PHONY : model/BuyWidget.o
+
+# target to build an object file
+model/BuyWidget.cxx.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyWidget.cxx.o
+.PHONY : model/BuyWidget.cxx.o
+
+model/BuyWidget.i: model/BuyWidget.cxx.i
+.PHONY : model/BuyWidget.i
+
+# target to preprocess a source file
+model/BuyWidget.cxx.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyWidget.cxx.i
+.PHONY : model/BuyWidget.cxx.i
+
+model/BuyWidget.s: model/BuyWidget.cxx.s
+.PHONY : model/BuyWidget.s
+
+# target to generate assembly for a file
+model/BuyWidget.cxx.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/BuyWidget.cxx.s
+.PHONY : model/BuyWidget.cxx.s
+
 model/CardItem.o: model/CardItem.cxx.o
 .PHONY : model/CardItem.o
 
@@ -339,6 +387,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/BuyModel.o"
+	@echo "... model/BuyModel.i"
+	@echo "... model/BuyModel.s"
+	@echo "... model/BuyWidget.o"
+	@echo "... model/BuyWidget.i"
+	@echo "... model/BuyWidget.s"
 	@echo "... model/CardItem.o"
 	@echo "... model/CardItem.i"
 	@echo "... model/CardItem.s"

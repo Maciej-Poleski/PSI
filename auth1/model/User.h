@@ -22,16 +22,22 @@ public:
     void persist(Action& a)
     {
         dbo::field(a,_isAdministrator,"is_administrator");
-        dbo::hasMany(a,cardItems,Wt::Dbo::ManyToOne,"user");
+        dbo::hasMany(a,_cardItems,Wt::Dbo::ManyToOne,"user");
     }
 
     Wt::Signal<> & cardChanged() const;
 
+    bool performTransaction();
+
+    std::size_t cardItemsCount() const;
+    std::int64_t totalPrice() const;
+
+    std::vector<dbo::ptr<CardItem>> cardItems() const;
     
     bool _isAdministrator=false;
 
 private:
-    dbo::collection<dbo::ptr<CardItem>> cardItems;
+    dbo::collection<dbo::ptr<CardItem>> _cardItems;
 
     mutable Wt::Signal<> _cardChanged;
 };

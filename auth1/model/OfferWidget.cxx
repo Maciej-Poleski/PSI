@@ -21,6 +21,8 @@ OfferWidget::OfferWidget(Session &session, Wt::WContainerWidget *parent): WConta
     _model->addColumn("ammount",Wt::WString::fromUTF8("Dostępność"));
     _model->addColumn("price",Wt::WString::fromUTF8("Cena"));
 
+    Item::databaseChanged.connect(this,&OfferWidget::reloadData);
+
     _tableView->setModel(_model);
     _tableView->setColumnResizeEnabled(false);
     _tableView->mouseWentUp().connect(this,&OfferWidget::dispatchClick);
@@ -38,4 +40,9 @@ void OfferWidget::dispatchClick(const Wt::WModelIndex & modelIndex)
         Wt::Dbo::Transaction t(_session);
         _session.user().modify()->addItem(_model->resultRow(modelIndex.row()));
     }
+}
+
+void OfferWidget::reloadData()
+{
+    _model->reload();
 }

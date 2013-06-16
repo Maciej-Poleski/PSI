@@ -6,5 +6,7 @@
 #include "CardItem.hxx"
 #include "User.h"
 
+Wt::Signal<> Item::databaseChanged;
+
 DBO_INSTANTIATE_TEMPLATES(Item);
 

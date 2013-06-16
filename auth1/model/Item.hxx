@@ -3,6 +3,7 @@
 
 #include <Wt/Dbo/Types>
 #include <Wt/WGlobal>
+#include <Wt/WSignal>
 
 class CardItem;
 namespace dbo = Wt::Dbo;
@@ -23,6 +24,8 @@ public:
         dbo::field(a,price,"price");
         dbo::hasMany(a,items,Wt::Dbo::ManyToOne,"item");
     }
+
+    static Wt::Signal<> databaseChanged;
 };
 
 
