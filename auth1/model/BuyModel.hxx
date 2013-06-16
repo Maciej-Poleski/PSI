@@ -21,6 +21,8 @@ public:
     virtual int rowCount(const Wt::WModelIndex& parent) const override;
     virtual int columnCount(const Wt::WModelIndex& parent) const override;
 
+    virtual boost::any headerData(int section, Wt::Orientation orientation = Wt::Horizontal, int role = Wt::DisplayRole) const override;
+
     void reload();
     void userChanged();
 

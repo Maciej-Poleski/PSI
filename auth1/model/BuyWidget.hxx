@@ -25,6 +25,7 @@ public:
 private:
     void performTransaction();
     void populatePrice();
+    void repopulateGui();
 
 private:
     Wt::WTableView *_tableView;

@@ -6,34 +6,38 @@
 
 #IncludeRegexTransform: 
 
-/home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.hxx
-Wt/WAbstractTableModel
+/home/evil/Studia/Przedmioty/PSI/auth1/main.cxx
+Wt/WApplication
 -
-Wt/Dbo/ptr
+Wt/WContainerWidget
 -
-
-/home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.cxx
-BuyWidget.hxx
-/home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.hxx
-Wt/WPushButton
+Wt/WServer
 -
-Wt/WVBoxLayout
+Wt/Auth/AuthModel
 -
-Wt/WHBoxLayout
+Wt/Auth/AuthWidget
 -
-Wt/WTableView
+Wt/Auth/PasswordService
 -
-Wt/WMessageBox
+Wt/WTabWidget
 -
-Wt/WLabel
--
-Session.h
+model/Session.h
 /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.h
-BuyModel.hxx
-/home/evil/Studia/Przedmioty/PSI/auth1/model/BuyModel.hxx
+model/OfferWidget.hxx
+/home/evil/Studia/Przedmioty/PSI/auth1/model/OfferWidget.hxx
+model/CardWidget.hxx
+/home/evil/Studia/Przedmioty/PSI/auth1/model/CardWidget.hxx
+model/BuyWidget.hxx
+/home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.hxx
 
 /home/evil/Studia/Przedmioty/PSI/auth1/model/BuyWidget.hxx
 Wt/WContainerWidget
+-
+
+/home/evil/Studia/Przedmioty/PSI/auth1/model/CardWidget.hxx
+Wt/WContainerWidget
+-
+boost/tuple/tuple.hpp
 -
 
 /home/evil/Studia/Przedmioty/PSI/auth1/model/Item.hxx
@@ -42,6 +46,10 @@ Wt/Dbo/Types
 Wt/WGlobal
 -
 Wt/WSignal
+-
+
+/home/evil/Studia/Przedmioty/PSI/auth1/model/OfferWidget.hxx
+Wt/WContainerWidget
 -
 
 /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.h

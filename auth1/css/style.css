@@ -13,3 +13,7 @@ body {
     padding-left: 4px;
     padding-right: 4px;
 }
+
+.red_background {
+    background-color: red !important;
+}

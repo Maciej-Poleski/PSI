@@ -21,3 +21,8 @@ int64_t CardItem::totalPrice() const
 {
     return count*costPerItem();
 }
+
+bool CardItem::acceptable() const
+{
+    return count<=item->ammount;
+}

@@ -22,6 +22,8 @@ public:
     std::int64_t costPerItem() const;
     std::int64_t totalPrice() const;
 
+    bool acceptable() const;
+
     template<class Action>
     void persist(Action &a)
     {

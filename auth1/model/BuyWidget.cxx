@@ -20,24 +20,27 @@ BuyWidget::BuyWidget(Session& session, Wt::WContainerWidget* parent): WContainer
     _tableView->setAlternatingRowColors(true);
     _model = new BuyModel(_session,this);
     _priceLabel=new Wt::WLabel(this);
-    userChanged();
 
     _tableView->setModel(_model);
     _tableView->setColumnResizeEnabled(false);
 
+    _buyButton=new Wt::WPushButton("Kup");
+
+    _buyButton->clicked().connect(this,&BuyWidget::performTransaction);
+
+    userChanged();
+}
+
+void BuyWidget::repopulateGui()
+{
     _layout=new Wt::WVBoxLayout();
     _layout->addWidget(_tableView,1);
 
     _hLayout=new Wt::WHBoxLayout();
     _hLayout->addWidget(_priceLabel,1);
-
-    _buyButton=new Wt::WPushButton("Kup");
     _hLayout->addWidget(_buyButton);
 
     _layout->addLayout(_hLayout);
-
-    _buyButton->clicked().connect(this,&BuyWidget::performTransaction);
-
     setLayout(_layout,Wt::AlignCenter);
 }
 
@@ -45,7 +48,7 @@ void BuyWidget::reloadData()
 {
     _model->reload();
     populatePrice();
-    setLayout(_layout,Wt::AlignCenter);
+    repopulateGui();
 }
 
 void BuyWidget::userChanged()
@@ -57,7 +60,7 @@ void BuyWidget::userChanged()
         _session.user()->cardChanged().connect(this,&BuyWidget::reloadData);
     }
     populatePrice();
-    setLayout(_layout,Wt::AlignCenter);
+    repopulateGui();
 }
 
 void BuyWidget::populatePrice()

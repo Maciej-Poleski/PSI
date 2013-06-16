@@ -6,6 +6,8 @@
 
 #include <boost/any.hpp>
 
+#include <Wt/WCssDecorationStyle>
+
 #include "Session.h"
 #include "CardItem.hxx"
 
@@ -27,13 +29,21 @@ boost::any BuyModel::data(const Wt::WModelIndex& index, int role) const
             }
             else if(index.column()==1)
             {
+                return _cardItems[index.row()]->costPerItem();
             }
             else if(index.column()==2)
             {
+                return _cardItems[index.row()]->count;
             }
             else if(index.column()==3)
             {
+                return _cardItems[index.row()]->totalPrice();
             }
+        }
+        else if(role==Wt::StyleClassRole)
+        {
+            if(!_cardItems[index.row()]->acceptable())
+                return "red_background";
         }
     }
     return boost::any();
@@ -71,4 +81,31 @@ void BuyModel::reset()
         _cardItems.clear();
     }
     WAbstractTableModel::reset();
+}
+
+boost::any BuyModel::headerData(int section, Wt::Orientation orientation, int role) const
+{
+    if(orientation==Wt::Horizontal)
+    {
+        if(role==Wt::DisplayRole)
+        {
+            if(section==0)
+            {
+                return Wt::WString::fromUTF8("Nazwa");
+            }
+            else if(section==1)
+            {
+                return Wt::WString::fromUTF8("Cena za sztuke");
+            }
+            else if(section==2)
+            {
+                return Wt::WString::fromUTF8("Sztuk");
+            }
+            else if(section==3)
+            {
+                return Wt::WString::fromUTF8("Koszt");
+            }
+        }
+    }
+    return Wt::WAbstractItemModel::headerData(section, orientation, role);
 }
