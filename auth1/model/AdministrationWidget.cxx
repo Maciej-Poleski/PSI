@@ -10,6 +10,7 @@
 
 #include "Session.h"
 #include "ItemsModel.hxx"
+#include "NameItemDelegate.hxx"
 
 AdministrationWidget::AdministrationWidget(Session& session, Wt::WContainerWidget* parent):
     WContainerWidget(parent), _session(session)
@@ -18,6 +19,7 @@ AdministrationWidget::AdministrationWidget(Session& session, Wt::WContainerWidge
     _tableView=new Wt::WTableView(this);
     _tableView->setModel(_itemsModel);
     _tableView->setAlternatingRowColors(true);
+    _tableView->setItemDelegateForColumn(0,new NameItemDelegate);
 
     _addNewItemPushButton=new Wt::WPushButton(Wt::WString::fromUTF8("Dodaj nowy przedmiot"));
     _addNewItemPushButton->clicked().connect([this] (const Wt::WMouseEvent&)

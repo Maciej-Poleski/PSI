@@ -347,6 +347,30 @@ model/ItemsModel.cxx.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/ItemsModel.cxx.s
 .PHONY : model/ItemsModel.cxx.s
 
+model/NameItemDelegate.o: model/NameItemDelegate.cxx.o
+.PHONY : model/NameItemDelegate.o
+
+# target to build an object file
+model/NameItemDelegate.cxx.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/NameItemDelegate.cxx.o
+.PHONY : model/NameItemDelegate.cxx.o
+
+model/NameItemDelegate.i: model/NameItemDelegate.cxx.i
+.PHONY : model/NameItemDelegate.i
+
+# target to preprocess a source file
+model/NameItemDelegate.cxx.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/NameItemDelegate.cxx.i
+.PHONY : model/NameItemDelegate.cxx.i
+
+model/NameItemDelegate.s: model/NameItemDelegate.cxx.s
+.PHONY : model/NameItemDelegate.s
+
+# target to generate assembly for a file
+model/NameItemDelegate.cxx.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/NameItemDelegate.cxx.s
+.PHONY : model/NameItemDelegate.cxx.s
+
 model/OfferWidget.o: model/OfferWidget.cxx.o
 .PHONY : model/OfferWidget.o
 
@@ -456,6 +480,9 @@ help:
 	@echo "... model/ItemsModel.o"
 	@echo "... model/ItemsModel.i"
 	@echo "... model/ItemsModel.s"
+	@echo "... model/NameItemDelegate.o"
+	@echo "... model/NameItemDelegate.i"
+	@echo "... model/NameItemDelegate.s"
 	@echo "... model/OfferWidget.o"
 	@echo "... model/OfferWidget.i"
 	@echo "... model/OfferWidget.s"

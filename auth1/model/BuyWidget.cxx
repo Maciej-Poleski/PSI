@@ -28,6 +28,7 @@ BuyWidget::BuyWidget(Session& session, Wt::WContainerWidget* parent): WContainer
     _buyButton=new Wt::WPushButton("Kup");
 
     _buyButton->clicked().connect(this,&BuyWidget::performTransaction);
+    Item::databaseChanged.connect(this,&BuyWidget::reloadData);
 
     userChanged();
 }

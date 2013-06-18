@@ -15,6 +15,7 @@ CMakeFiles/server.dir/model/AdministrationWidget.cxx.o
  /home/evil/Studia/Przedmioty/PSI/auth1/model/AdministrationWidget.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/Item.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/ItemsModel.hxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/NameItemDelegate.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.h
  /home/evil/Studia/Przedmioty/PSI/auth1/model/User.h
 CMakeFiles/server.dir/model/BuyModel.cxx.o
@@ -54,6 +55,9 @@ CMakeFiles/server.dir/model/ItemsModel.cxx.o
  /home/evil/Studia/Przedmioty/PSI/auth1/model/ItemsModel.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/Session.h
  /home/evil/Studia/Przedmioty/PSI/auth1/model/User.h
+CMakeFiles/server.dir/model/NameItemDelegate.cxx.o
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/NameItemDelegate.cxx
+ /home/evil/Studia/Przedmioty/PSI/auth1/model/NameItemDelegate.hxx
 CMakeFiles/server.dir/model/OfferWidget.cxx.o
  /home/evil/Studia/Przedmioty/PSI/auth1/model/CardItem.hxx
  /home/evil/Studia/Przedmioty/PSI/auth1/model/Item.hxx

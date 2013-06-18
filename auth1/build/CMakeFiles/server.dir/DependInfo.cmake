@@ -12,6 +12,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/CardWidget.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/CardWidget.cxx.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/Item.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/Item.cxx.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/ItemsModel.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/ItemsModel.cxx.o"
+  "/home/evil/Studia/Przedmioty/PSI/auth1/model/NameItemDelegate.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/NameItemDelegate.cxx.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/OfferWidget.cxx" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/OfferWidget.cxx.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/Session.C" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/Session.C.o"
   "/home/evil/Studia/Przedmioty/PSI/auth1/model/User.C" "/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir/model/User.C.o"

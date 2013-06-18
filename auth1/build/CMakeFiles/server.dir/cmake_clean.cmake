@@ -1,4 +1,5 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/server.dir/model/NameItemDelegate.cxx.o"
   "CMakeFiles/server.dir/model/AdministrationWidget.cxx.o"
   "CMakeFiles/server.dir/model/ItemsModel.cxx.o"
   "CMakeFiles/server.dir/model/BuyModel.cxx.o"

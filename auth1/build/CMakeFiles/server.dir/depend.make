@@ -14,6 +14,7 @@ CMakeFiles/server.dir/model/AdministrationWidget.cxx.o: ../model/AdministrationW
 CMakeFiles/server.dir/model/AdministrationWidget.cxx.o: ../model/AdministrationWidget.hxx
 CMakeFiles/server.dir/model/AdministrationWidget.cxx.o: ../model/Item.hxx
 CMakeFiles/server.dir/model/AdministrationWidget.cxx.o: ../model/ItemsModel.hxx
+CMakeFiles/server.dir/model/AdministrationWidget.cxx.o: ../model/NameItemDelegate.hxx
 CMakeFiles/server.dir/model/AdministrationWidget.cxx.o: ../model/Session.h
 CMakeFiles/server.dir/model/AdministrationWidget.cxx.o: ../model/User.h
 
@@ -53,6 +54,9 @@ CMakeFiles/server.dir/model/ItemsModel.cxx.o: ../model/ItemsModel.cxx
 CMakeFiles/server.dir/model/ItemsModel.cxx.o: ../model/ItemsModel.hxx
 CMakeFiles/server.dir/model/ItemsModel.cxx.o: ../model/Session.h
 CMakeFiles/server.dir/model/ItemsModel.cxx.o: ../model/User.h
+
+CMakeFiles/server.dir/model/NameItemDelegate.cxx.o: ../model/NameItemDelegate.cxx
+CMakeFiles/server.dir/model/NameItemDelegate.cxx.o: ../model/NameItemDelegate.hxx
 
 CMakeFiles/server.dir/model/OfferWidget.cxx.o: ../model/CardItem.hxx
 CMakeFiles/server.dir/model/OfferWidget.cxx.o: ../model/Item.hxx
