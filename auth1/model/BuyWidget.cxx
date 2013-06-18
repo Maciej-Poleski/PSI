@@ -23,6 +23,7 @@ BuyWidget::BuyWidget(Session& session, Wt::WContainerWidget* parent): WContainer
 
     _tableView->setModel(_model);
     _tableView->setColumnResizeEnabled(false);
+    _tableView->setSortingEnabled(false);
 
     _buyButton=new Wt::WPushButton("Kup");
 

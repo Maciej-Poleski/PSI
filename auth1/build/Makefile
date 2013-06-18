@@ -179,6 +179,30 @@ main.cxx.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cxx.s
 .PHONY : main.cxx.s
 
+model/AdministrationWidget.o: model/AdministrationWidget.cxx.o
+.PHONY : model/AdministrationWidget.o
+
+# target to build an object file
+model/AdministrationWidget.cxx.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/AdministrationWidget.cxx.o
+.PHONY : model/AdministrationWidget.cxx.o
+
+model/AdministrationWidget.i: model/AdministrationWidget.cxx.i
+.PHONY : model/AdministrationWidget.i
+
+# target to preprocess a source file
+model/AdministrationWidget.cxx.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/AdministrationWidget.cxx.i
+.PHONY : model/AdministrationWidget.cxx.i
+
+model/AdministrationWidget.s: model/AdministrationWidget.cxx.s
+.PHONY : model/AdministrationWidget.s
+
+# target to generate assembly for a file
+model/AdministrationWidget.cxx.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/AdministrationWidget.cxx.s
+.PHONY : model/AdministrationWidget.cxx.s
+
 model/BuyModel.o: model/BuyModel.cxx.o
 .PHONY : model/BuyModel.o
 
@@ -299,6 +323,30 @@ model/Item.cxx.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/Item.cxx.s
 .PHONY : model/Item.cxx.s
 
+model/ItemsModel.o: model/ItemsModel.cxx.o
+.PHONY : model/ItemsModel.o
+
+# target to build an object file
+model/ItemsModel.cxx.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/ItemsModel.cxx.o
+.PHONY : model/ItemsModel.cxx.o
+
+model/ItemsModel.i: model/ItemsModel.cxx.i
+.PHONY : model/ItemsModel.i
+
+# target to preprocess a source file
+model/ItemsModel.cxx.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/ItemsModel.cxx.i
+.PHONY : model/ItemsModel.cxx.i
+
+model/ItemsModel.s: model/ItemsModel.cxx.s
+.PHONY : model/ItemsModel.s
+
+# target to generate assembly for a file
+model/ItemsModel.cxx.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/model/ItemsModel.cxx.s
+.PHONY : model/ItemsModel.cxx.s
+
 model/OfferWidget.o: model/OfferWidget.cxx.o
 .PHONY : model/OfferWidget.o
 
@@ -387,6 +435,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/AdministrationWidget.o"
+	@echo "... model/AdministrationWidget.i"
+	@echo "... model/AdministrationWidget.s"
 	@echo "... model/BuyModel.o"
 	@echo "... model/BuyModel.i"
 	@echo "... model/BuyModel.s"
@@ -402,6 +453,9 @@ help:
 	@echo "... model/Item.o"
 	@echo "... model/Item.i"
 	@echo "... model/Item.s"
+	@echo "... model/ItemsModel.o"
+	@echo "... model/ItemsModel.i"
+	@echo "... model/ItemsModel.s"
 	@echo "... model/OfferWidget.o"
 	@echo "... model/OfferWidget.i"
 	@echo "... model/OfferWidget.s"

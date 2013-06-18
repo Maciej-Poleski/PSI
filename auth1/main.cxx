@@ -12,6 +12,7 @@
 #include "model/OfferWidget.hxx"
 #include "model/CardWidget.hxx"
 #include "model/BuyWidget.hxx"
+#include "model/AdministrationWidget.hxx"
 
 class AuthApplication : public Wt::WApplication
 {
@@ -34,6 +35,9 @@ public:
         _buyWidget=new BuyWidget(session_);
         tabWidget->addTab(_buyWidget,"Transakcja");
         tabWidget->setTabHidden(3,true);
+        _adminWidget=new AdministrationWidget(session_);
+        tabWidget->addTab(_adminWidget,"Administracja");
+        tabWidget->setTabHidden(4,true);
 
         session_.login().changed().connect(this, &AuthApplication::authEvent);
         session_.login().changed().connect(_cardWidget,&CardWidget::userChanged);
@@ -54,11 +58,14 @@ public:
             tabWidget->setTabText(0, "Wyloguj");
             tabWidget->setTabHidden(2,false);
             tabWidget->setTabHidden(3,false);
+            if(session_.user()->_isAdministrator)
+                tabWidget->setTabHidden(4,false);
         } else {
             Wt::log("notice") << "User logged out.";
             tabWidget->setTabText(0, "Zaloguj");
             tabWidget->setTabHidden(2,true);
             tabWidget->setTabHidden(3,true);
+            tabWidget->setTabHidden(4,true);
         }
     }
 
@@ -66,6 +73,7 @@ private:
     OfferWidget *_offerWidget;
     CardWidget *_cardWidget;
     BuyWidget *_buyWidget;
+    AdministrationWidget *_adminWidget;
 
     Wt::WTabWidget *tabWidget;
     Session session_;
