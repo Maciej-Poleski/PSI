@@ -9,18 +9,18 @@ INCLUDE_DIRECTORIES( ${Wt_INCLUDE_DIR} )
 include_directories(${Boost_INCLUDE_DIR})
 
 add_executable(server
-    model/NameItemDelegate.cxx
-    model/AdministrationWidget.cxx
-    model/ItemsModel.cxx
-    model/BuyModel.cxx
-    model/BuyWidget.cxx
-    model/CardWidget.cxx
-    model/CardItem.cxx
-    model/Item.cxx 
-    model/OfferWidget.cxx
+    src/NameItemDelegate.cxx
+    src/AdministrationWidget.cxx
+    src/ItemsModel.cxx
+    src/BuyModel.cxx
+    src/BuyWidget.cxx
+    src/CardWidget.cxx
+    src/CardItem.cxx
+    src/Item.cxx
+    src/OfferWidget.cxx
     main.cxx
-    model/Session.C
-    model/User.C)
+    src/Session.C
+    src/User.C)
 
 TARGET_LINK_LIBRARIES( server
     ${Wt_DEBUG_LIBRARY}        # or {Wt_LIBRARY}

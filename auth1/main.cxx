@@ -8,11 +8,11 @@
 
 #include <Wt/WTabWidget>
 
-#include "model/Session.h"
-#include "model/OfferWidget.hxx"
-#include "model/CardWidget.hxx"
-#include "model/BuyWidget.hxx"
-#include "model/AdministrationWidget.hxx"
+#include "src/Session.h"
+#include "src/OfferWidget.hxx"
+#include "src/CardWidget.hxx"
+#include "src/BuyWidget.hxx"
+#include "src/AdministrationWidget.hxx"
 
 class AuthApplication : public Wt::WApplication
 {
