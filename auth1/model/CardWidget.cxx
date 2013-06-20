@@ -24,10 +24,10 @@ CardWidget::CardWidget(Session& session, Wt::WContainerWidget* parent) :
 {
     _tableView = new Wt::WTableView();
     _tableView->setAlternatingRowColors(true);
-    userChanged();
-    _model = new Wt::Dbo::QueryModel<boost::tuple<Wt::Dbo::ptr< Item >,Wt::Dbo::ptr<CardItem>,std::int64_t>>(this);
 
-    _tableView->setModel(_model);
+    _model = new Wt::Dbo::QueryModel<boost::tuple<Wt::Dbo::ptr< Item >,Wt::Dbo::ptr<CardItem>,std::int64_t>>(this);
+    userChanged();
+
     _tableView->setColumnResizeEnabled(false);
     _tableView->mouseWentUp().connect(this,&CardWidget::dispatchClick);
 
