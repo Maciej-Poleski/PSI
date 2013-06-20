@@ -1,1 +1,0 @@
-/home/evil/Studia/Przedmioty/PSI/auth1/build/CMakeFiles/server.dir

@@ -5,7 +5,6 @@
 #include "CardItem.hxx"
 
 #include "Item.hxx"
-#include "User.h"
 
 std::string CardItem::name() const
 {
@@ -26,3 +25,8 @@ bool CardItem::acceptable() const
 {
     return count<=item->ammount;
 }
+
+#include <Wt/Dbo/collection_impl.h>
+#include <Wt/Dbo/ptr>
+
+template Wt::Dbo::collection<Wt::Dbo::ptr<CardItem> >::collection();

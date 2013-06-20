@@ -4,7 +4,12 @@
 
 #include "ItemsModel.hxx"
 
+#include <Wt/Dbo/collection>
+#include <Wt/Dbo/ptr>
+
 #include "Session.h"
+#include "CardItem.hxx"
+#include "Item.hxx"
 
 ItemsModel::ItemsModel(Session &session, Wt::WObject* parent): WAbstractTableModel(parent), _session(session)
 {
